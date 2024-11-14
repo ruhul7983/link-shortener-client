@@ -16,7 +16,7 @@ const Hero = () => {
         const data = { originalLink };
 
         axios
-            .post("https://link-shortner-swart.vercel.app/redirect", data)
+            .post("https://shortly-li.vercel.app/redirect", data)
             .then((res) => {
                 setShortLink(res.data); // Set the short link
                 form.reset(); // Reset the form
