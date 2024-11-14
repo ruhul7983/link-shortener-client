@@ -3,6 +3,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { FiCopy } from "react-icons/fi"; // Import the copy icon from react-icons
+import Text from "./Text";
 
 const Hero = () => {
     const [shortLink, setShortLink] = useState("");
@@ -38,7 +39,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-[80vh] ">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-2xl font-bold text-center py-5">Link Shortener</h1>
                 <form onSubmit={handleSubmit} className="flex justify-center">
@@ -68,6 +69,7 @@ const Hero = () => {
                         </>
                     )}
                 </div>
+                <Text></Text>
             </div>
         </div>
     );
